@@ -1,0 +1,27 @@
+{
+    "landingPage": "\/wp-admin\/admin.php?page=proxy_vpn_blocker_settings",
+    "preferredVersions": {
+        "php": "8.2",
+        "wp": "6.6"
+    },
+    "phpExtensionBundles": [
+        "kitchen-sink"
+    ],
+    "features": {
+        "networking": true
+    },
+    "steps": [
+        {
+            "step": "login",
+            "username": "admin",
+            "password": "password"
+        },
+        {
+            "step": "setSiteOptions",
+            "options": {
+                "pvb_proxycheckio_dummy_data": "on",
+                "pvb_enable_debugging": "on"
+            }
+        }
+    ]
+}
